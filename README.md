@@ -23,7 +23,7 @@ With this application we intend to provide the homeless population in King Count
 
 ### User Story
 
-There is no better feeling in this world than to lend a helping hand to someone who is need of one. Whether it be a family member, close friends, or even a homeless person on the street, one of these indivduals can always use the help. So we see this application as an opportunity to benefit people excperiencing homelessness and working-poor communities, providing them a helping hand that they need to get their basic needs met.
+There is no better feeling in this world than to lend a helping hand to someone who is need of one. Whether it be a family member, close friends, or even a homeless person on the street, one of these indivduals can always use the help. So we see this application as an opportunity to benefit people experiencing homelessness and working-poor communities, providing them a helping hand that they need to get their basic needs met.
 
 ```
 AS A person experiencing homelessness
