@@ -14,4 +14,3 @@ CREATE TABLE organization (
     shelter BOOLEAN DEFAULT false,
     PRIMARY KEY(id)
 );
-
