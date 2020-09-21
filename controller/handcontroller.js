@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
 });
 
 //allowing orginizations to add ther information to the data base
-router.post('api/services', function(req, res) {
+router.post('api/organization', function(req, res) {
     help.create([
         'name',
         'address',
@@ -44,7 +44,7 @@ router.post('api/services', function(req, res) {
     console.log(req.body, 'req.body')
 })
 
-router.put('/api/services/:id', function (req, res) {
+router.put('/api/organization/:id', function (req, res) {
     let condition = true
     console.log(condition, 'CONDITION');
     console.log(req.params, 'REQ PARAMS');
