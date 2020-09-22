@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Helping Hand</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="../public/assets/Helping-Hand-Logo.png" height="50" class="d-inline-block align-top"
+                alt="Helping Hand logo">
+            Helping Hand
+        </a>
+        <form class="form-inline">
+            <button class="btn btn-danger" type="button">Create a Profile</button>
+            <button class="btn btn-danger" type="button">Add a Service Organization</button>
+        </form>
+    </nav>
+
+    <section id="first-question">
+        <div class="container-fluid">
+            <h1>What do you need?</h1>
+        </div>
+        <div class="container">
+            <button class="btn btn-icon" id="food"><img class="main-services" src="../public/assets/food-icon.png"
+                    width="300px"></button>
+            <button class="btn btn-icon" id="shelter"><img class="main-services"
+                    src="../public/assets/shelter-icon.png" width="300px"></button>
+        </div>
+        <div class="container">
+            <button class="btn btn-icon" id="health"><img class="main-services"
+                    src="../public/assets/health-icon.png" width="300px"></button>
+            <button class="btn btn-icon" id="daily"><img class="main-services" src="../public/assets/daily-icon.png"
+                    width="300px"></button>
+        </div>
+    </section>
+
+    <section id="food-service" style="display: none;">
+        <div class="container-fluid">
+            <h1>What kind of service are you looking for?</h1>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-secondary" id="food-bank">Food Bank</button>
+            <button type="button" class="btn btn-secondary" id="served-meal">Served Meal</button>
+        </div>
+    </section>
+
+    <section id="shelter-service" style="display: none;">
+        <div class="container-fluid">
+            <h1>What kind of service are you looking for?</h1>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-secondary" id="immediate">Immediate Shelter</button>
+            <button type="button" class="btn btn-secondary" id="longer-term">Longer-Term Shelter</button>
+        </div>
+    </section>
+
+    <section id="health-service" style="display: none;">
+        <div class="container-fluid">
+            <h1>What kind of service are you looking for?</h1>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-secondary" id="urgent">Urgent Care</button>
+            <button type="button" class="btn btn-secondary" id="dental">Emergency Dental Care</button>
+            <button type="button" class="btn btn-secondary" id="mental">Mental Health Care</button>
+        </div>
+    </section>
+
+    <section id="gender" style="display: none;">
+        <div class="container-fluid">
+            <h1>Are you:</h1>
+        </div>
+        <div class="container">
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-secondary" id="male">Male</button>
+                <button type="button" class="btn btn-secondary" id="female">Female</button>
+                <button type="button" class="btn btn-secondary" id="family">Family Group</button>
+                <button type="button" class="btn btn-secondary" id="prefer-not">Prefer not to say</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="age" style="display: none;">
+        <div class="container-fluid">
+            <h1>How old are you?</h1>
+        </div>
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInput">Age</label>
+                    <input type="number" class="form-control form-control-lg mb-2" id="inlineFormInput"
+                        placeholder="18">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-dark btn-lg mb-2" id="age-submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="../public/js/helpinghand.js"></script>
+</body>
+
+</html>
