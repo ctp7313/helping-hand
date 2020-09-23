@@ -6,7 +6,7 @@ const services = {
             cb(res)
         })
     },
-    creat: function(col, val, cb) {
+    create: function(col, val, cb) {
         orm.create('organization', col, val, function(res) {
             cb(res);
         });
