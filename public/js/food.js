@@ -1,48 +1,41 @@
-const firstQuestion = document.getElementById("first-question");
-const foodService = document.getElementById("food-service");
-const chooseGender = document.getElementById("gender");
-const chooseAge = document.getElementById("age");
-// const conditionals;
-
-// Food Need question tree
-$("#food").click(function() {
-    firstQuestion.style.display = "none";
-    foodService.style.display = "";
-});
-
 $("#food-bank").click(function() {
     foodService.style.display = "none";
-    chooseGender.style.display = "";
-    let foodBankTrue = $("#food-bank").value;
-    console.log(foodBankTrue);
+    let value = $("#food-bank").attr("value");
+    sessionStorage.setItem(value, value);
+    // display results
 });
 
 $("#served-meal").click(function() {
     foodService.style.display = "none";
     chooseGender.style.display = "";
+    let value = $("#served-meal").attr("value");
+    sessionStorage.setItem(value, value);
 });
 
 $("#male").click(function() {
     chooseGender.style.display = "none";
     chooseAge.style.display = "";
+    let value = $("#male").attr("value");
+    sessionStorage.setItem(value, value);
 });
 
 $("#female").click(function() {
     chooseGender.style.display = "none";
     chooseAge.style.display = "";
-});
-
-$("#prefer-not").click(function() {
-    chooseGender.style.display = "none";
-    chooseAge.style.display = "";
+    let value = $("#female").attr("value");
+    sessionStorage.setItem(value, value);
 });
 
 $("#family").click(function() {
     chooseGender.style.display = "none";
+    let value = $("#family").attr("value");
+    sessionStorage.setItem(value, value);
     // display results
 });
 
 $("#age-submit").click(function() {
     chooseAge.style.display = "none";
+    let value = $("#inlineFormInput").val();
+    sessionStorage.setItem("age", value);
     // display results
 });
