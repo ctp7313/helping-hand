@@ -1,3 +1,5 @@
+/* jslint vars: true */
+
 const orm = require('../config/orm.js')
 
 const services = {
