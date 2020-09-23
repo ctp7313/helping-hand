@@ -21,6 +21,11 @@ section {
     text-align: center;
 }
 
+label {
+    font-weight: bold;
+    color: #425260;
+}
+
 .main-services {
     padding: 20px;
 }
