@@ -29,7 +29,10 @@ router.post('api/organization', function(req, res) {
     help.create([
         'name',
         'address',
-        'phonenumber',
+        'city',
+        'state',
+        'zip',
+        'phone_number',
         'website',
         'sunday',
         'monday',
@@ -61,7 +64,10 @@ router.post('api/organization', function(req, res) {
     [
         req.body.name,
         req.body.address,
-        req.body.phonenumber,
+        req.body.city,
+        req.body.state,
+        req.body.zip,
+        req.body.phone_number,
         req.body.website,
         req.body.sunday,
         req.body.monday,
