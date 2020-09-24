@@ -3,11 +3,16 @@ const orm = require('../config/orm.js');
 
 const services = {
     all: function(cb) {
-        orm.all('organization', function (res) {
+        orm.all('organization', function(res) {
             cb(res)
         })
     },
-    creat: function(col, val, cb) {
+    results: function(cb) {
+        orm.results('organization', colArray, val, function(res) {
+            cb(res);
+        })
+    },
+    create: function(col, val, cb) {
         orm.create('organization', col, val, function(res) {
             cb(res);
         });

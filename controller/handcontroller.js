@@ -4,14 +4,23 @@ const router = express.Router();
 
 const help = require('../models/help.js')
 
-
 router.get('/', function(req, res) {
     help.all(function(data) {
         let hbsObj = {
             help: data
         };
-        console.log(hbsObj);
+        console.log("all: " + hbsObj);
         res.render('index', hbsObj)
+    });
+});
+
+router.get('api/results', function(req, res) {
+    help.results(function(data) {
+        let hbsObj = {
+            help: data
+        };
+        console.log("results: " + hbsObj);
+        res.render('results', hbsObj)
     });
 });
 
@@ -20,7 +29,10 @@ router.post('api/organization', function(req, res) {
     help.create([
         'name',
         'address',
-        'phonenumber',
+        'city',
+        'state',
+        'zip',
+        'phone_number',
         'website',
         'sunday',
         'monday',
@@ -52,7 +64,10 @@ router.post('api/organization', function(req, res) {
     [
         req.body.name,
         req.body.address,
-        req.body.phonenumber,
+        req.body.city,
+        req.body.state,
+        req.body.zip,
+        req.body.phone_number,
         req.body.website,
         req.body.sunday,
         req.body.monday,
@@ -81,7 +96,7 @@ router.post('api/organization', function(req, res) {
         req.body.behavioral,
         false
     ], function(results) {
-        console.log(results)
+        console.log("create: " + results)
      //giving an id to each company who choses to added ther company information
         res.json({id: res.insertID})
     }); 
