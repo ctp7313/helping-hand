@@ -24,5 +24,5 @@ $("#health").click(function() {
 $("#daily").click(function() {
     firstQuestion.style.display = "none";
     chooseGender.style.display = "";
-    sessionStorage.setItem("daily_care", "daily_care")
+    sessionStorage.setItem(1, "daily_care")
 });

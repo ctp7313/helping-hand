@@ -31,7 +31,7 @@ const orm = {
     results: function (cb) {
         buildArray();
         let queryString = `SELECT name, address, website FROM services_db.organization
-        WHERE ${choicesArray.food_bank} = 1 and food_bank = 1`;
+        WHERE ${colArray.food_bank} = 1 and ${colArray.male} = 1`;
         connection.query(queryString, function (err, res) {
             if (err) throw err;
             cb(res);
@@ -60,7 +60,7 @@ const orm = {
     }
 };
 
-function buildArray(key, value) {
+function buildArray() {
     const colArray = [];
     for (let i = 0; i < sessionStorage.key.length; i++) {
         colArray.push(sessionStorage.getItem(sessionStorage.key(i)))
